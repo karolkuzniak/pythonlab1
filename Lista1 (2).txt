@@ -1,0 +1,27 @@
+1
+---------
+class Zwierze:
+    def init(self, imie, wiek, rodzaj):
+        self.imie = imie
+	self.rodzaj = rodzaj
+        self.wiek = wiek
+        
+
+
+z1 = Zwierze('Rex', 20, 'man')
+assert z1.imie == 'Rex'
+assert z1.rodzaj == 'man'
+assert z1.wiek == 20
+ 
+2
+--------
+import matplotlib
+class Colors:
+    def init(self,color):
+        self.color = color
+    def to_hex(self):
+        color = input("Enter color: ")
+        print(matplotlib.colors.cnames[color])
+colors = Colors("")
+colors.to_hex()
+
